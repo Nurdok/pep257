@@ -23,9 +23,9 @@ from re import compile as re
 import itertools
 from collections import defaultdict, namedtuple, Set
 
-try:  # Python 3.x
+try:  # Python 2.x
     from ConfigParser import RawConfigParser
-except ImportError:  # Python 2.x
+except ImportError:  # Python 3.x
     from configparser import RawConfigParser
 
 log = logging.getLogger(__name__)
